@@ -1,0 +1,122 @@
+/* ==================== ESTILOS GENERALES Y RESET BÁSICO ==================== */
+
+/* Mejor manejo del tamaño de las cajas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Una fuente legible */
+    line-height: 1.6; /* Espacio entre líneas para mejor lectura */
+    color: #333; /* Color de texto principal (gris oscuro) */
+    background-color: #f4f4f4; /* Un fondo gris muy claro */
+    padding: 20px; /* Un poco de espacio alrededor */
+}
+
+/* ==================== ESTRUCTURA PRINCIPAL ==================== */
+
+/* Centramos el contenido principal y le damos un ancho máximo */
+header, nav, main, footer {
+    max-width: 800px; /* Ancho máximo para que no se extienda demasiado en pantallas grandes */
+    margin: 20px auto; /* Centra los bloques y añade espacio vertical */
+    padding: 25px; /* Espacio interno */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Una sombra sutil */
+}
+
+/* ==================== TÍTULOS ==================== */
+
+h1, h2 {
+    color: #0056b3; /* Un azul para los títulos */
+    margin-bottom: 15px; /* Espacio debajo de los títulos */
+    border-bottom: 2px solid #e0e0e0; /* Una línea sutil debajo */
+    padding-bottom: 5px;
+}
+
+h1 {
+    text-align: center; /* Centramos el título principal */
+    border-bottom: none; /* Quitamos la línea al H1 para un look más limpio */
+}
+
+/* ==================== NAVEGACIÓN / ÍNDICE ==================== */
+
+nav ol {
+    list-style-position: inside; /* Mueve los números dentro de la lista */
+    padding-left: 10px;
+}
+
+nav li {
+    margin-bottom: 8px; /* Espacio entre los elementos del índice */
+}
+
+nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #007bff; /* Un azul más brillante para los enlaces */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón */
+    color: #0056b3;
+}
+
+/* ==================== SECCIONES DEL TUTORIAL ==================== */
+
+section {
+    margin-bottom: 40px; /* Espacio generoso entre secciones */
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc; /* Línea punteada para separar secciones */
+}
+
+/* La última sección no necesita la línea de abajo */
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* ==================== IMÁGENES ==================== */
+
+img {
+    max-width: 100%; /* Hace que las imágenes no se salgan de su contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Para poder centrarla con márgenes */
+    margin: 20px auto; /* Centra la imagen y le da espacio vertical */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* ==================== LISTAS DE CONTENIDO (UL) ==================== */
+
+section ul {
+    list-style: disc; /* Estilo de viñeta normal */
+    margin-left: 20px; /* Un poco de indentación */
+    padding-left: 15px;
+}
+
+section ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de las listas */
+}
+
+/* ==================== PÁRRAFOS Y ÉNFASIS ==================== */
+
+p {
+    margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}
+
+strong {
+    color: #0056b3; /* Resalta el texto en negrita con el color azul */
+}
+
+/* ==================== PIE DE PÁGINA ==================== */
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #777;
+    background-color: transparent; /* Hacemos el fondo del footer transparente */
+    box-shadow: none; /* Sin sombra */
+    margin-top: 30px;
+}
