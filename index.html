@@ -4,126 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tutorial: ¿Qué es una API?</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+
+
+        <button id="modoToggleBtn" title="Cambiar modo">
+            <i id="modoIcono" class="fas fa-sun"></i> 
+        </button>
 
         <header>
             <h1>Las APIs: ¿Qué Son y Cómo las Usas Todos los Días?</h1>
         </header>
 
-        <nav>
-            <h2>Índice del Tutorial:</h2>
-            <ol>
-                <li><a href="#que-es-api">¿Qué Significa API y Qué Es Realmente?</a></li>
-                <li><a href="#analogia-mesero">El Mesero Digital: Una Analogía para Entender las APIs</a></li>
-                <li><a href="#para-que-sirven">¿Para Qué Sirven? El Poder de Conectar Mundos Digitales</a></li>
-                <li><a href="#ejemplos-accion">APIs en Acción: Ejemplos que Usas sin Darte Cuenta</a></li>
-                <li><a href="#importancia-futuro">El Futuro es Conectado: ¿Por Qué Son Tan Importantes?</a></li>
-            </ol>
-        </nav>
-
         <main>
-            <section id="que-es-api">
-                <h2>¿Qué Significa API y Qué Es Realmente?</h2>
-                
-                <img src="images/QueEsAPi.png" alt="API">
-                
-                <p>
-                    Primero lo primero: ¿qué significan esas tres letras? <strong>API</strong> es el acrónimo de <em>Application Programming Interface</em>, que en español se traduce como <strong>Interfaz de Programación de Aplicaciones</strong>.
-                </p>
-                <p>
-                    Pero, ¿qué es en palabras sencillas? Imagina una API como un "contrato" o un conjunto de reglas bien definidas que permite que dos piezas de software diferentes se comunican entre sí. No es la aplicación completa, ni la base de datos, ni el servidor; es el <strong>intermediario</strong> que define cómo se pueden solicitar y entregar información o funcionalidades específicas entre sistemas. Funciona como un traductor y mensajero entre programas que quizás no hablan el mismo "idioma".
-                </p>
-            </section>
-            <section id="analogia-mesero">
-                <h2>El Mesero Digital: Una Analogía para Entender las APIs</h2>
-                
-                <img src="images/ApiMeseros.jpeg" alt="Ilustración de un mesero conectando un cliente con la cocina">
-                
-                <p>
-                    Una de las formas más sencillas de entender qué es una API es pensar en ella como un <strong>mesero en un restaurante</strong>. Imagina la siguiente situación y sus actores:
-                </p>
-                <ul>
-                    <li><strong>Tú (el Cliente):</strong> Eres la aplicación (o el usuario) que necesita algo (datos o una función).</li>
-                    <li><strong>La Cocina (el Servidor/Sistema):</strong> Es donde se "preparan" los datos o las funcionalidades que necesitas.</li>
-                    <li><strong>El Menú:</strong> Es la "documentación" de la API; te dice qué puedes pedir y cómo hacerlo.</li>
-                    <li><strong>El Mesero (¡La API!):</strong> Es el intermediario. Tú no entras a la cocina, le hablas al mesero.</li>
-                </ul>
-                <p>
-                    El mesero (la API) toma tu pedido (la <strong>petición</strong> o <em>request</em>), se asegura de que sea algo que la cocina puede hacer (valida la petición según el menú), lo lleva a la cocina, espera a que esté listo y, finalmente, te trae tu plato (la <strong>respuesta</strong> o <em>response</em>). 
-                </p>
-                <p>
-                    El mesero es ese intermediario crucial que permite la comunicación de forma ordenada y eficiente, ¡sin que tú tengas que saber los detalles de cómo funciona la cocina! Eso es exactamente lo que hace una API entre diferentes sistemas de software.
-                </p>
-            </section>
-            <section id="para-que-sirven">
-                <h2>¿Para Qué Sirven? El Poder de Conectar Mundos Digitales</h2>
-                
-                <img src="images/api_enchufe.webp" alt="Iconos de aplicaciones conectadas entre sí">
-                
-                <p>
-                    Ya sabemos qué son, pero ¿cuál es su verdadera utilidad? Las APIs son los "enchufes" del mundo digital. Permiten que aplicaciones y servicios, incluso si fueron creados por diferentes personas y con distintas tecnologías, puedan "conectarse" y trabajar juntos. Sus principales propósitos son:
-                </p>
-                <ul>
-                    <li><strong>Reutilizar Funcionalidad:</strong> Evitan que los desarrolladores tengan que "reinventar la rueda". Si una aplicación ya hace algo muy bien (como mostrar mapas), otra aplicación puede usar esa función a través de su API.</li>
-                    <li><strong>Facilitar la Integración:</strong> Permiten que sistemas distintos colaboren. Piensa en cómo una tienda online se conecta con un sistema de pagos (como PayPal o Stripe) o con una empresa de logística para los envíos.</li>
-                    <li><strong>Compartir Datos de Forma Controlada:</strong> Hacen posible que una aplicación acceda a datos de otra, pero de una manera segura y definida por el dueño de los datos. Tú decides qué compartes y cómo (como cuando una app te pide permiso para acceder a tus contactos).</li>
-                    <li><strong>Fomentar la Innovación:</strong> Al permitir que otros construyan sobre funcionalidades existentes, las APIs abren la puerta a la creación de nuevos servicios y aplicaciones que combinan lo mejor de varios mundos.</li>
-                </ul>
-                <p>
-                    En resumen, las APIs son esenciales para construir los ecosistemas digitales complejos y conectados que usamos hoy en día, haciendo que todo funcione de manera más fluida y potente.
-                </p>
-            </section>
-            <section id="ejemplos-accion">
-                <h2>APIs en Acción: Ejemplos que Usas sin Darte Cuenta</h2>
-                
-                <img src="images/Api_uso.png" alt="Collage de logos de aplicaciones populares como Google Maps, PayPal, Facebook, etc.">
-                
-                <p>
-                    Puede que el término "API" te suene técnico, pero la verdad es que interactúas con ellas constantemente en tu día a día. Aquí tienes algunos ejemplos muy comunes:
-                </p>
-                <ul>
-                    <li><strong>Iniciar Sesión con Redes Sociales:</strong> Cuando una web o app te ofrece "Iniciar sesión con Google" o "Entrar con Facebook", está usando la API de Google o Facebook para verificar tu identidad sin que tengas que crear una nueva cuenta.</li>
-                    <li><strong>Mapas Integrados:</strong> ¿Has usado una app de reparto, de taxis o de reserva de hoteles que te muestra un mapa? Lo más probable es que esté usando la API de Google Maps, Apple Maps u OpenStreetMap para mostrar esa información geográfica.</li>
-                    <li><strong>El Pronóstico del Tiempo:</strong> Las aplicaciones y widgets del clima no tienen sus propias estaciones meteorológicas. Consumen datos de servicios especializados a través de sus APIs para darte la predicción actualizada.</li>
-                    <li><strong>Pagos Online Seguros:</strong> Al comprar por internet y pagar con tarjeta o a través de plataformas como PayPal o Mercado Pago, la tienda online utiliza la API de la pasarela de pago para procesar la transacción de forma segura.</li>
-                    <li><strong>Compartir Contenido:</strong> Esos botones de "Compartir en Twitter", "Enviar por WhatsApp" o "Publicar en Facebook" que ves en los artículos y webs utilizan las APIs de esas redes para facilitar el envío de enlaces.</li>
-                </ul>
-                <p>
-                    Como ves, las APIs son el "pegamento" invisible que hace que gran parte de la web y las aplicaciones móviles funcionen como las conocemos.
-                </p>
-            </section>
-            <section id="importancia-futuro">
-                <h2>El Futuro es Conectado: ¿Por Qué Son Tan Importantes?</h2>
-                
-                <img src="images/api_futuro.webp" alt="Imagen abstracta sobre conectividad y futuro tecnológico">
-                
-                <p>
-                    Hemos visto qué son las APIs, cómo funcionan a través de analogías y ejemplos, y para qué sirven. La conclusión es clara: las APIs son mucho más que un simple término técnico; son <strong>pilares fundamentales de la tecnología moderna y del futuro</strong>.
-                </p>
-                <p>
-                    Permiten a las empresas y desarrolladores:
-                </p>
-                <ul>
-                    <li><strong>Acelerar el desarrollo:</strong> Al no tener que construir todo desde cero.</li>
-                    <li><strong>Mejorar la experiencia del usuario:</strong> Integrando servicios útiles y familiares.</li>
-                    <li><strong>Crear nuevos modelos de negocio:</strong> Basados en la "economía de APIs", donde se ofrecen servicios a través de ellas.</li>
-                    <li><strong>Impulsar la innovación:</strong> Facilitando la experimentación y la combinación de tecnologías.</li>
-                </ul>
-                <p>
-                    En un mundo donde todo tiende a estar conectado – desde tu móvil y tu reloj hasta tu coche y tu casa – las APIs son las que hacen posible esa interconexión. Entenderlas no es solo para programadores, sino para cualquiera que quiera comprender cómo se construye y funciona el mundo digital que nos rodea. ¡Son el lenguaje universal de las aplicaciones!
-                </p>
-            </section>
+            <h2>¡Bienvenido al Tutorial!</h2>
+            <p>
+                En este tutorial exploraremos el fascinante mundo de las APIs (Interfaces de Programación de Aplicaciones). Aprenderemos qué son, cómo funcionan y por qué son tan importantes en la tecnología que usamos a diario.
+            </p>
+            <p>
+                Selecciona un tema de la lista para empezar:
+            </p>
+
+            <nav class="indice-principal">
+                <h3>Índice de Temas:</h3>
+                <ol>
+                    <li><a href="que-es-api.html">¿Qué Significa API y Qué Es Realmente?</a></li>
+                    <li><a href="analogia-mesero.html">El Mesero Digital: Una Analogía para Entender las APIs</a></li>
+                    <li><a href="para-que-sirven.html">¿Para Qué Sirven? El Poder de Conectar Mundos Digitales</a></li>
+                    <li><a href="ejemplos-accion.html">APIs en Acción: Ejemplos que Usas sin Darte Cuenta</a></li>
+                    <li><a href="importancia-futuro.html">El Futuro es Conectado: ¿Por Qué Son Tan Importantes?</a></li>
+                </ol>
+            </nav>
+
         </main>
 
         <footer>
             Aprendiz: Yessica Mendoza Herrera<br>
-            Programa: Análisis y Desarrollo de Software<br>
-            Ficha: 2977398
+            Programa: Análisis y Desarrollo de Software ADSO<br>
+            Ficha: 2977398 
         </footer>
-
-        <button id="scrollTopBtn" title="Volver Arriba">↑</button>
 
         <script src="js/script.js" defer></script>
 
